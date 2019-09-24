@@ -1,0 +1,170 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    height: 700px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-size: cover;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*  VERY HUGE as it avoids the background to move with the elements on the page */
+    background-position: center; 
+}
+
+#date
+{
+    position: absolute;
+    top: 30%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#container
+{
+    margin-top: 7em;
+}
+
+.time
+{
+    font-size: 140px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.layer
+{
+    position: absolute;
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-size: cover;
+}
+
+.msg, .main
+{
+    font-size: 30px;
+    line-height: 1.3em;
+    font-weight: bold;
+    z-index: 1;
+    
+}
+
+button
+{
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    background-color: black;
+    color: white;
+}
+
+.change
+{
+    position: absolute;
+    top: 2%;
+    right: 9%;
+    font-size: 1.2em;
+}
+
+#put
+{
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+.box
+{
+    position: absolute;
+    top: 1%;
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 0.5em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-weight: 900;
+}
+
+.icon
+{
+    color: black;
+    font-size: 23px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    transition: 1s;
+    animation-fill-mode: forwards;
+    /* transform: translateX(100%); */
+}
+
+.icon:hover
+{
+    cursor: pointer;
+}
+
+#put, #butn
+{
+    display: none;
+}
+
+/* Editing Focus and Name lines */
+.main
+{
+    margin-top: 30px;
+    line-height: 2em;
+}
+
+.msg
+{
+    opacity: 0.7;
+    margin-top: 1em;
+}
+
+.welcome, .what, .name, .focus
+{
+    font-size: 1.2em;
+}
+
+@media(max-width: 650px)
+{
+    .icon
+    {
+        transform: translateX(10px); 
+    }
+
+    .layer
+    {
+        height: 122%;
+    }
+
+    .time
+    {
+        font-size: 7.5em;
+    }
+
+    .box
+    {
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        border: 3px solid black;
+        padding: 4px;   
+    }
+
+
+}

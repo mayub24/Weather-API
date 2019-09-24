@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylin.css">
+    <title>Live Weather</title>
+</head>
+<body>
+
+    <div id="date">
+
+    </div>
+
+    
+<div id="container">
+    
+    <div class="time">
+        01:41:11
+    </div>
+
+    <div class="msg">
+        <span class="welcome">Good Morning, </span>
+        <span class="name" contenteditable="true" style="text-decoration: underline"></span>
+    </div>
+
+    <div class="main">
+        <div class="what">What is your focus today?</div>
+        <div class="focus" contenteditable="true" style="text-decoration: underline; font-size: 20" ></div>
+    </div>
+
+</div>
+
+    <!-- Adding a seach bar to get Weather -->
+    <div class="weather">
+        <input type="text" placeholder="Choose Location" id="put">
+        <button id="butn">Enter</button>
+    </div>
+
+    <!-- Weather Box -->
+    <div class="box">
+        <p id="feel"></p>
+        <p id="area"></p>
+        <p id="temp"></p>
+        <p id="img"></p>
+    </div>
+
+    <!-- Icon -->
+
+    <!-- <div class="question">
+        <p>Change Location?</p>
+    </div> -->
+
+    <div class="change">
+        <p>Change Location?</p>
+    </div>
+
+    <div class="icon">
+        <i class="fas fa-search"></i>
+    </div>
+    
+
+
+    <script src="landing.js"></script>
+    <script src="makeReqs.js"></script>
+    <script src="store.js"></script>
+    <script src="ui.js"></script>
+    <script src="getReqs.js"></script>
+</body>
+</html>
