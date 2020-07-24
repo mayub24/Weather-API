@@ -15,8 +15,7 @@ document.addEventListener(`DOMContentLoaded`, keepInLocalStorage);
 
 // Get the Button and add an event listner
 const enter = document.querySelector(`#butn`);
-enter.addEventListener(`click`, () =>
-{
+enter.addEventListener(`click`, () => {
     document.querySelector(`.box`).style.display = `block`;
     // Get value from HTML and set and Change City
 
@@ -26,12 +25,10 @@ enter.addEventListener(`click`, () =>
 
     http.changeCity(getVal);
 
-    if(getVal !== "")
-    {
+    if (getVal !== "") {
         keepInLocalStorage();
     }
-    else
-    {
+    else {
         alert(`Field is empty!`);
     }
 });
@@ -39,11 +36,9 @@ enter.addEventListener(`click`, () =>
 
 
 
-function keepInLocalStorage()
-{
+function keepInLocalStorage() {
     http.getWeather()
-    .then(data =>
-        {
+        .then(data => {
             console.log(data);
             console.log(data.wed);
             newUI.putItems(data.wed);
